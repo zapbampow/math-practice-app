@@ -1,0 +1,52 @@
+.quizzing {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width:500px;
+  margin:0 auto;
+  padding: 1rem;
+}
+
+.question {
+  font-size: 4rem;
+}
+
+.keypad {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-row:repeat(4, 1fr);
+  grid-gap: .5em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0 1em;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 800)));
+  height: 8vmax;
+  width: 8vmax;
+  border:1px solid white;
+  justify-self:center;
+  align-self:center;
+}
+
+
+.enter {
+  grid-column:2/4;
+  grid-row:4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 800)));
+  height: 8vmax;
+  width: 100%;
+  border:1px solid white;
+  justify-self:center;
+  align-self:center;
+}

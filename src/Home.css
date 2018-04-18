@@ -1,0 +1,22 @@
+.home {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.division:before {
+  content:'\00F7'
+}
+
+.division::after {
+  content:'\00F7'
+}
+
+.math-name {
+  font-size: 1.75rem;
+}

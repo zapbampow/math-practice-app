@@ -1,0 +1,65 @@
+.practice-nums {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  padding: .5em .5em;
+  grid-template-areas:
+    "header header header header"
+    "all all all all"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "enter enter enter enter"
+    ;
+
+}
+
+.practice-num-heading {
+  grid-area:header;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.practice-num-all {
+  grid-area: all;
+}
+
+.practice-num-enter {
+  grid-area: enter;
+}
+
+.practice-num-all, .practice-num-enter {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  max-height: 2em;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 1500)));
+
+}
+
+.practice-num-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 1500)));
+  height: 9vmax;
+  width: 9vmax;
+  border:1px solid white;
+  justify-self:center;
+  align-self:center;
+
+}
+
+.practice-num-all:hover, .practice-num-num:hover, .practice-num-enter:hover {
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: rgba(20, 20, 20, 1)
+}

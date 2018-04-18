@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+body {
+  background-color: black;
+  color:white;
+  font-family:'Gaegu', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+}

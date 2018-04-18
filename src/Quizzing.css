@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 800)));
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 1400)));
   height: 8vmax;
   width: 8vmax;
   border:1px solid white;
@@ -49,4 +49,8 @@
   border:1px solid white;
   justify-self:center;
   align-self:center;
+}
+
+.num:active, .enter:active {
+  background-color: rgba(25, 25, 25, 1);
 }

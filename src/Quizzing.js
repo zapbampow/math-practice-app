@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Question from './Question'
 import './Quizzing.css';
 
 class Quizzing extends Component {
@@ -17,7 +18,9 @@ class Quizzing extends Component {
   render(){
     return (
       <div className='quizzing'>
-        <div className='question'>{this.props.quiz.question} <span className='answer'>{this.props.quiz.userAnswer}</span></div>
+
+        {/*Change this to a component that receives quiz as props. Then it change the className based on quiz.correct*/}
+        <Question quiz={this.props.quiz} />
         <div className='keypad'>
           <div className='num' onClick={this.props.handleClickQuiz}>7</div>
           <div className='num' onClick={this.props.handleClickQuiz}>8</div>
@@ -29,6 +32,9 @@ class Quizzing extends Component {
           <div className='num' onClick={this.props.handleClickQuiz}>2</div>
           <div className='num' onClick={this.props.handleClickQuiz}>3</div>
           <div className='num' onClick={this.props.handleClickQuiz}>0</div>
+
+          {/*Add a back button that acts as a backspace for the answer. Add a function that deals with that.*/}
+          <div className='backspace' onClick={this.props.handleClickQuiz}>Backspace</div>
           <div className='enter' onClick={this.props.handleClickQuiz}>Enter</div>
         </div>
       </div>

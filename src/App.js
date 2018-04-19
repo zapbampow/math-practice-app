@@ -901,6 +901,7 @@ class App extends Component {
         question:'',
         correctAnswer:null,
         userAnswer: '',
+        correct:null
       }
     }
     this.handleClickHome = this.handleClickHome.bind(this);
@@ -971,10 +972,19 @@ class App extends Component {
     if(e.target.innerHTML === 'Enter') {
       if(quiz.userAnswer == quiz.answer){
         console.log("Correct!")
-        setTimeout(this.newQuestion, 1000)
+        const quiz = this.state.quiz;
+        quiz.correct = true;
+        this.setState({quiz});
+        setTimeout(this.newQuestion, 1500);
       } else {
         console.log("Nope!")
+        const quiz = this.state.quiz;
+        quiz.correct = false;
+        this.setState({quiz});
+        setTimeout(this.newQuestion, 3000);
       }
+    } else if(e.target.innerHTML === "Backspace"){
+      console.log("Backspace pressed")
     } else if(quiz.userAnswer){
       quiz.userAnswer = quiz.userAnswer + e.target.innerHTML;
       this.setState({quiz});
@@ -1047,3 +1057,5 @@ export default App;
 // Add user login and data persistence for userAnswer
 
 // Refactor for react-native
+
+// Remind myself how to compartmentalize the functions so as to clean up this code.

@@ -902,7 +902,8 @@ class App extends Component {
         correctAnswer:null,
         userAnswer: '',
         correct:null
-      }
+      },
+      currentQuestion:{}
     }
     this.handleClickHome = this.handleClickHome.bind(this);
     this.handleClickOptions = this.handleClickOptions.bind(this);
@@ -968,23 +969,41 @@ class App extends Component {
   }
 
   handleClickQuiz(e){
+    {/*
+      BUG: if you click enter several times in a row, it registers for the upcoming math facts. Fix it so that you can't click it again until a new math fact has actually displayed.
+    */}
+
     const quiz = Object.assign(this.state.quiz);
     if(e.target.innerHTML === 'Enter') {
       if(quiz.userAnswer == quiz.answer){
         console.log("Correct!")
-        const quiz = this.state.quiz;
+        const quiz = Object.assign(this.state.quiz);
         quiz.correct = true;
-        this.setState({quiz});
+        const currentQuestion = Object.assign(this.state.currentQuestion);
+
+        switch(this.state.practice){
+          case 'addition':
+            currentQuestion.addLevel = currentQuestion.addLevel + 1;
+          case 'subtraction':
+            currentQuestion.subLevel = currentQuestion.subLevel + 1;
+          case 'multiplication':
+            currentQuestion.multLevel = currentQuestion.multLevel + 1;
+          case 'division':
+            currentQuestion.divLevel = currentQuestion.divLevel + 1;
+        }
+
+        this.setState({quiz, currentQuestion});
         setTimeout(this.newQuestion, 1500);
       } else {
         console.log("Nope!")
-        const quiz = this.state.quiz;
+        const quiz = Object.assign(this.state.quiz);
         quiz.correct = false;
         this.setState({quiz});
         setTimeout(this.newQuestion, 3000);
       }
     } else if(e.target.innerHTML === "Backspace"){
-      console.log("Backspace pressed")
+      quiz.userAnswer = quiz.userAnswer.slice(0, quiz.userAnswer.length-1);
+      this.setState({quiz});
     } else if(quiz.userAnswer){
       quiz.userAnswer = quiz.userAnswer + e.target.innerHTML;
       this.setState({quiz});
@@ -1015,21 +1034,51 @@ class App extends Component {
 
     const randomMathFact = Math.floor(Math.random()*Math.floor(this.state.mathFacts[level].length));
 
-    const question = this.state.mathFacts[level][randomMathFact].combo[0] + ' + ' + this.state.mathFacts[level][randomMathFact].combo[1] + ' = ';
+    const currentQuestion = Object.assign(this.state.mathFacts[level][randomMathFact]);
 
-    const answer =  this.state.mathFacts[level][randomMathFact].combo[0] + this.state.mathFacts[level][randomMathFact].combo[1];
+    let question;
+    let answer;
 
-    this.setState({quiz:{question, answer}})
+    switch(this.state.practice){
+      case 'addition':
+        question = currentQuestion.combo[0] + ' + ' + currentQuestion.combo[1] + ' = ';
+        answer =  currentQuestion.combo[0] + currentQuestion.combo[1];
+        break;
+      case 'subtraction':
+      {/*
+        TODO: Do the same thing you are doing to do with the division with randomizing.
+      */}
+        question = (currentQuestion.combo[1] + currentQuestion.combo[0]) + ' - ' + currentQuestion.combo[0] + ' = ';
+        answer =  (currentQuestion.combo[1] + currentQuestion.combo[0]) - currentQuestion.combo[0];
+        break;
+      case 'multiplication':
+      question = currentQuestion.combo[0] + ' x ' + currentQuestion.combo[1] + ' = ';
+        answer =  currentQuestion.combo[0] * currentQuestion.combo[1];
+        break;
+      case 'division':
+        {/*
+          TODO: Figure out which number to use as the divisor, then place it as the divisor.
+          Possible solution: Set array with 2 options. Set randomNum. If randomNum <= 0.5, check if first num in array is in options. If yes, use it. If not use, other number. If randomNum > 0.5, check if second num in array is in options. If yes, use it, if not, use other number.
+        */}
+        question = (currentQuestion.combo[0] * currentQuestion.combo[1]) + ' \xF7 ' + currentQuestion.combo[0] + ' = ';
+        answer =  (currentQuestion.combo[0] * currentQuestion.combo[1])/ currentQuestion.combo[0];
+        break;
+    }
+
+
+
+    this.setState({quiz:{question, answer}, currentQuestion})
   }
 
   render() {
-    const screen = ()=> {switch(this.state.screen) {
-      case 'quizzing':
-        return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} />;
-      case 'options':
-        return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} />;
-      default:
-          return <Home handleClickHome={this.handleClickHome}/>;
+    const screen = ()=> {
+      switch(this.state.screen) {
+        case 'quizzing':
+          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} />;
+        case 'options':
+          return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} />;
+        default:
+            return <Home handleClickHome={this.handleClickHome}/>;
       }
     };
 
@@ -1044,12 +1093,9 @@ class App extends Component {
 export default App;
 
 // TODOS
-// in handleClickQuiz: on correct answer 1.setState({quiz.correct:true}) -> changes className to include correct styling(green letters) 2. Also setState on that problem's level and update grouping if needed.
+// Setup to only display problems based on numbers chosen in the options state.
+// in handleClickQuiz: 1. Also setState -> update grouping if needed.
 // Add next problem button which changes the problem view
-// on incorrect answer 1. setState quiz.correct:false -> also changes className 2. reveal the correct answer in green next to the wrong answer.
-// Test this for addition.
-// Then add a new condition so that it shows different problems bases on the the practice state.
-// Then add a new condition to show different problems based on options state.
 // On Quiz component add a backspace button so user can backspace on an userAnswer
 // On quiz and options components add keyboard functionality for numbers and Enter
 

@@ -1010,12 +1010,16 @@ class App extends Component {
         switch(this.state.practice){
           case 'addition':
             currentQuestion.addLevel = currentQuestion.addLevel + 1;
+            break;
           case 'subtraction':
             currentQuestion.subLevel = currentQuestion.subLevel + 1;
+            break;
           case 'multiplication':
             currentQuestion.multLevel = currentQuestion.multLevel + 1;
+            break;
           case 'division':
             currentQuestion.divLevel = currentQuestion.divLevel + 1;
+            break;
         }
 
         this.setState({quiz, currentQuestion});
@@ -1024,7 +1028,24 @@ class App extends Component {
         console.log("Nope!")
         const quiz = Object.assign(this.state.quiz);
         quiz.correct = false;
-        this.setState({quiz});
+        const currentQuestion = Object.assign(this.state.currentQuestion);
+
+        switch(this.state.practice){
+          case 'addition':
+            currentQuestion.addLevel = currentQuestion.addLevel - 1;
+            break;
+          case 'subtraction':
+            currentQuestion.subLevel = currentQuestion.subLevel - 1;
+            break;
+          case 'multiplication':
+            currentQuestion.multLevel = currentQuestion.multLevel - 1;
+            break;
+          case 'division':
+            currentQuestion.divLevel = currentQuestion.divLevel - 1;
+            break;
+        }
+
+        this.setState({quiz, currentQuestion});
         setTimeout(this.newQuestion, 3000);
       }
     }
@@ -1120,7 +1141,7 @@ class App extends Component {
 export default App;
 
 // TODOS
-// Setup to only display problems based on numbers chosen in the options state.
+// Update where questions are stored based on their mastery level
 // in handleClickQuiz: 1. Also setState -> update grouping if needed.
 // Change how the next problem comes. Instead of setTimeout, add next problem button which can only be clicked after an answer has been given.
 // sinetgub

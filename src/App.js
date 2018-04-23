@@ -26,7 +26,7 @@ class App extends Component {
         {square:'12', clicked:false},
         {square:"Enter", clicked:"false"}
       ],
-      options:[],
+      options:["1", "2", '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
       mathFacts: {
         mastered: [],
         level2: [],
@@ -902,6 +902,11 @@ class App extends Component {
         correctAnswer:null,
         userAnswer: '',
         correct:null
+      },
+      selectedFacts: {
+        mastered:[],
+        level2:[],
+        level1:[]
       }
     }
     this.handleClickHome = this.handleClickHome.bind(this);
@@ -939,14 +944,33 @@ class App extends Component {
           {square:'12', clicked:false},
           {square:"Enter", clicked:"false"}
         ],
-
       })
     } else if(e.target.innerHTML === 'Enter') {
-      this.setState({screen:'quizzing'})
+      const selectedFacts = {mastered:[], level2:[], level1:[]};
+      // const selectedFacts = [];
+      const options = this.state.options.slice();
+      const mathFacts = Object.assign(this.state.mathFacts);
+      const match = (arr, val) => {
+        return arr.some(el => el == val);
+      };
+
+      for(let prop in mathFacts){
+        mathFacts[prop].forEach( obj => {
+          if(match(options, obj.combo[0]) || match(options, obj.combo[1])){
+            selectedFacts[prop].push(obj);
+          }
+        })
+      }
+
+      // setState: Change screen to quizzing. Add selectedFacts.
+      this.setState({screen:'quizzing', selectedFacts})
     } else {
       let options = this.state.options.slice();
+            console.log(options);
       if(!options.includes(e.target.innerHTML)){
         options.push(e.target.innerHTML);
+      } else if(this.state.squares[0].clicked === true){
+        options = [e.target.innerHTML];
       } else {
         const location = options.indexOf(e.target.innerHTML);
         options.splice(location, 1);
@@ -972,7 +996,10 @@ class App extends Component {
       BUG: if you click enter several times in a row, it registers for the upcoming math facts. Fix it so that you can't click it again until a new math fact has actually displayed. Maybe add some state related to whether and enter has been clicked, which prompts a change of whether onClick is attached to 'Enter'. Also change how it to be visually different when you can't click it.
     */}
 
+    // Set quiz object to modify, which will be used to setState
     const quiz = Object.assign(this.state.quiz);
+
+    // What to to when clicking 'Enter'
     if(e.target.innerHTML === 'Enter') {
       if(quiz.userAnswer == quiz.answer){
         console.log("Correct!")
@@ -1000,40 +1027,41 @@ class App extends Component {
         this.setState({quiz});
         setTimeout(this.newQuestion, 3000);
       }
-    } else if(e.target.innerHTML === "Backspace"){
+    }
+    // Click Backspace
+    else if(e.target.innerHTML === "Backspace"){
       quiz.userAnswer = quiz.userAnswer.slice(0, quiz.userAnswer.length-1);
       this.setState({quiz});
-    } else if(quiz.userAnswer){
+    }
+    // Clicking number buttons
+    else if(quiz.userAnswer){
       quiz.userAnswer = quiz.userAnswer + e.target.innerHTML;
       this.setState({quiz});
     } else {
       quiz.userAnswer = e.target.innerHTML;
       this.setState({quiz});
     }
-
-
-
   }
 
   newQuestion() {
     const randomLevel = Math.random()*12;
 
     let level;
-    if(this.state.mathFacts.mastered.length > 0 && this.state.mathFacts.level2.length > 0 && this.state.mathFacts.length > 0) {
+    if(this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.length > 0) {
         (randomLevel > 10) ? level = 'mastered'
         : (randomLevel <=10 && randomLevel > 6) ? level='level2'
         : level='level1' ;
-    } else if (this.state.mathFacts.level2.length > 0 && this.state.mathFacts.length > 0) {
+    } else if (this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.length > 0) {
       (randomLevel > 8) ? level = 'level2' : level = 'level1'
-    } else if (this.state.mathFacts.mastered.length > 0 && this.state.mathFacts.length > 0){
+    } else if (this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.length > 0){
       (randomLevel > 9) ? level = 'mastered' : level = 'level1'
     } else {
       level = 'level1'
     }
 
-    const randomMathFact = Math.floor(Math.random()*Math.floor(this.state.mathFacts[level].length));
+    const randomMathFact = Math.floor(Math.random()*Math.floor(this.state.selectedFacts[level].length));
 
-    const currentQuestion = Object.assign(this.state.mathFacts[level][randomMathFact]);
+    const currentQuestion = Object.assign(this.state.selectedFacts[level][randomMathFact]);
 
     let question;
     let answer;

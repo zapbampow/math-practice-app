@@ -27,876 +27,872 @@ class App extends Component {
         {square:"Enter", clicked:"false"}
       ],
       options:["1", "2", '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-      mathFacts: {
-        mastered: [],
-        level2: [],
-        level1: [
-          {
-            combo: [1, 1],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 2],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 3],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 4],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 5],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [1, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          }, {
-            combo: [1, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          }, {
-            combo: [1, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+      mathFacts: [
+        {
+          combo: [1, 1],
+          addLevel: 12,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 2],
+          addLevel: 7,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 3],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 4],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 5],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [1, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        }, {
+          combo: [1, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        }, {
+          combo: [1, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [2, 2],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 3],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 4],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 5],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [2, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [2, 2],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 3],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 4],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 5],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [2, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [3, 3],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 4],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 5],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [3, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [3, 3],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 4],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 5],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [3, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [4, 4],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 5],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [4, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [4, 4],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 5],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [4, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [5, 5],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [5, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [5, 5],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [5, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [6, 6],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [6, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [6, 6],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [6, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [7, 7],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [7, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [7, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [7, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [7, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [7, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [7, 7],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [7, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [7, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [7, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [7, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [7, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [8, 8],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [8, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [8, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [8, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [8, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
+        {
+          combo: [8, 8],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [8, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [8, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [8, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [8, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
 
-          {
-            combo: [9, 9],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [9, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [9, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [9, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [10, 10],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [10, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [10, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [11, 11],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [11, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          },
-          {
-            combo: [12, 12],
-            addLevel: 0,
-            subLevel: 0,
-            multLevel: 0,
-            divLevel: 0,
-            addMastered: false,
-            subMastered: false,
-            multMastered: false,
-            divMastered: false
-          }
-        ]
-      },
+        {
+          combo: [9, 9],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [9, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [9, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [9, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [10, 10],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [10, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [10, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [11, 11],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [11, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        },
+        {
+          combo: [12, 12],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0,
+          addMastered: false,
+          subMastered: false,
+          multMastered: false,
+          divMastered: false
+        }
+      ],
       quiz:{
         question:'',
         correctAnswer:null,
@@ -954,13 +950,39 @@ class App extends Component {
         return arr.some(el => el == val);
       };
 
-      for(let prop in mathFacts){
-        mathFacts[prop].forEach( obj => {
-          if(match(options, obj.combo[0]) || match(options, obj.combo[1])){
-            selectedFacts[prop].push(obj);
+      // Fill selectedFacts
+      mathFacts.forEach( obj => {
+        if(match(options, obj.combo[0]) || match(options, obj.combo[1])){
+          let levelType;
+          switch(this.state.practice){
+            case 'addition':
+              levelType = 'addLevel';
+              break;
+            case 'subtraction':
+              levelType = 'subLevel';
+              break;
+            case 'multiplication':
+              levelType = 'multLevel';
+              break;
+            case 'division':
+              levelType = 'multLevel';
+              break;
+            default:
+              levelType = 'addLevel';
+              break;
           }
-        })
-      }
+
+          if(obj[levelType] <= 6){
+            selectedFacts.level1.push(obj);
+          } else if(obj[levelType] <= 10 && obj[levelType] > 6){
+            selectedFacts.level2.push(obj);
+          } else {
+            selectedFacts.mastered.push(obj);
+          }
+
+        }
+      })
+
 
       // setState: Change screen to quizzing. Add selectedFacts.
       this.setState({screen:'quizzing', selectedFacts})
@@ -1068,13 +1090,14 @@ class App extends Component {
     const randomLevel = Math.random()*12;
 
     let level;
-    if(this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.length > 0) {
+    if(this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.level1.length > 0) {
+      debugger;
         (randomLevel > 10) ? level = 'mastered'
         : (randomLevel <=10 && randomLevel > 6) ? level='level2'
         : level='level1' ;
-    } else if (this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.length > 0) {
+    } else if (this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.level1.length > 0) {
       (randomLevel > 8) ? level = 'level2' : level = 'level1'
-    } else if (this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.length > 0){
+    } else if (this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.level1.length > 0){
       (randomLevel > 9) ? level = 'mastered' : level = 'level1'
     } else {
       level = 'level1'
@@ -1141,7 +1164,10 @@ class App extends Component {
 export default App;
 
 // TODOS
-// Update where questions are stored based on their mastery level
+
+  // 1. Refactor mathFacts state to just be the facts objects (78 objects) DONE
+  // 2. Refactor mathFacts -> selectedFacts so that that it seperates the facts into groups. Ask the question, what is the level of this kind of math. DONE
+
 // in handleClickQuiz: 1. Also setState -> update grouping if needed.
 // Change how the next problem comes. Instead of setTimeout, add next problem button which can only be clicked after an answer has been given.
 // sinetgub

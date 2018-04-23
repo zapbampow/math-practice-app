@@ -19,7 +19,6 @@ class Quizzing extends Component {
     return (
       <div className='quizzing'>
 
-        {/*Change this to a component that receives quiz as props. Then it change the className based on quiz.correct*/}
         <Question quiz={this.props.quiz} />
         <div className='keypad'>
           <div className='num' onClick={this.props.handleClickQuiz}>7</div>
@@ -33,7 +32,6 @@ class Quizzing extends Component {
           <div className='num' onClick={this.props.handleClickQuiz}>3</div>
           <div className='num' onClick={this.props.handleClickQuiz}>0</div>
 
-          {/*Add a back button that acts as a backspace for the answer. Add a function that deals with that.*/}
           <div className='backspace' onClick={this.props.handleClickQuiz}>Backspace</div>
           <div className='enter' onClick={this.props.handleClickQuiz}>Enter</div>
         </div>

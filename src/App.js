@@ -902,8 +902,7 @@ class App extends Component {
         correctAnswer:null,
         userAnswer: '',
         correct:null
-      },
-      currentQuestion:{}
+      }
     }
     this.handleClickHome = this.handleClickHome.bind(this);
     this.handleClickOptions = this.handleClickOptions.bind(this);
@@ -920,7 +919,7 @@ class App extends Component {
   }
 
   handleClickOptions(e) {
-    // Update options and clicked in state based on what you is clicked
+    // Update 'options' and 'clicked' in state based on what you is clicked
     if(e.target.innerHTML === 'All'){
       this.setState({
         options:['1','2','3','4','5','6','7','8','9', '10', '11', '12'],
@@ -970,7 +969,7 @@ class App extends Component {
 
   handleClickQuiz(e){
     {/*
-      BUG: if you click enter several times in a row, it registers for the upcoming math facts. Fix it so that you can't click it again until a new math fact has actually displayed.
+      BUG: if you click enter several times in a row, it registers for the upcoming math facts. Fix it so that you can't click it again until a new math fact has actually displayed. Maybe add some state related to whether and enter has been clicked, which prompts a change of whether onClick is attached to 'Enter'. Also change how it to be visually different when you can't click it.
     */}
 
     const quiz = Object.assign(this.state.quiz);
@@ -1074,7 +1073,7 @@ class App extends Component {
     const screen = ()=> {
       switch(this.state.screen) {
         case 'quizzing':
-          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} />;
+          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} />;
         case 'options':
           return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} />;
         default:
@@ -1095,9 +1094,8 @@ export default App;
 // TODOS
 // Setup to only display problems based on numbers chosen in the options state.
 // in handleClickQuiz: 1. Also setState -> update grouping if needed.
-// Add next problem button which changes the problem view
-// On Quiz component add a backspace button so user can backspace on an userAnswer
-// On quiz and options components add keyboard functionality for numbers and Enter
+// Change how the next problem comes. Instead of setTimeout, add next problem button which can only be clicked after an answer has been given.
+// sinetgub
 
 // Refactor for redux
 // Add user login and data persistence for userAnswer
@@ -1105,3 +1103,8 @@ export default App;
 // Refactor for react-native
 
 // Remind myself how to compartmentalize the functions so as to clean up this code.
+// Wait until the font has loaded to display anything so that it stops displaying and then changing once the font is loaded.
+// Overhaul the visual look to be consistant and more polished.
+
+
+//Flow: On 'Enter' on PracticeNums screen -> take options, filter to return only the combos that include the numbers selected, keeping them in their correct groups based on mastery -> setState to add those numbers to possible questions -> pass that to quizzing which runs newQuestion which picks a random fact from the list and displays it.

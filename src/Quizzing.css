@@ -49,6 +49,9 @@
   border:1px solid white;
   justify-self:center;
   align-self:center;
+  background-color: black;
+  color:white;
+  font-family:'Gaegu', sans-serif;
 }
 
 .backspace {

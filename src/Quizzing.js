@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import Question from './Question'
 import './Quizzing.css';
+import QuizEnterBtn from './QuizEnterBtn'
 
 class Quizzing extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      question:'',
-      answer:''
-    }
   }
 
   componentWillMount(){
@@ -33,7 +30,7 @@ class Quizzing extends Component {
           <div className='num' onClick={this.props.handleClickQuiz}>0</div>
 
           <div className='backspace' onClick={this.props.handleClickQuiz}>Backspace</div>
-          <div className='enter' onClick={this.props.handleClickQuiz}>Enter</div>
+          <QuizEnterBtn isBtnDisabled={this.props.isBtnDisabled} handleClickQuiz={this.props.handleClickQuiz} />
         </div>
       </div>
     )

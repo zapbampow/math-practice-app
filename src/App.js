@@ -903,7 +903,8 @@ class App extends Component {
         mastered:[],
         level2:[],
         level1:[]
-      }
+      },
+      isBtnDisabled:false
     }
     this.handleClickHome = this.handleClickHome.bind(this);
     this.handleClickOptions = this.handleClickOptions.bind(this);
@@ -943,7 +944,6 @@ class App extends Component {
       })
     } else if(e.target.innerHTML === 'Enter') {
       const selectedFacts = {mastered:[], level2:[], level1:[]};
-      // const selectedFacts = [];
       const options = this.state.options.slice();
       const mathFacts = Object.assign(this.state.mathFacts);
       const match = (arr, val) => {
@@ -1014,15 +1014,13 @@ class App extends Component {
   }
 
   handleClickQuiz(e){
-    {/*
-      BUG: if you click enter several times in a row, it registers for the upcoming math facts. Fix it so that you can't click it again until a new math fact has actually displayed. Maybe add some state related to whether and enter has been clicked, which prompts a change of whether onClick is attached to 'Enter'. Also change how it to be visually different when you can't click it.
-    */}
-
     // Set quiz object to modify, which will be used to setState
     const quiz = Object.assign(this.state.quiz);
 
     // What to to when clicking 'Enter'
     if(e.target.innerHTML === 'Enter') {
+      this.setState({isBtnDisabled:true});
+      console.log('btn disabled')
       if(quiz.userAnswer == quiz.answer){
         console.log("Correct!")
         const quiz = Object.assign(this.state.quiz);
@@ -1091,7 +1089,6 @@ class App extends Component {
 
     let level;
     if(this.state.selectedFacts.mastered.length > 0 && this.state.selectedFacts.level2.length > 0 && this.state.selectedFacts.level1.length > 0) {
-      debugger;
         (randomLevel > 10) ? level = 'mastered'
         : (randomLevel <=10 && randomLevel > 6) ? level='level2'
         : level='level1' ;
@@ -1138,14 +1135,14 @@ class App extends Component {
 
 
 
-    this.setState({quiz:{question, answer}, currentQuestion})
+    this.setState({quiz:{question, answer}, currentQuestion, isBtnDisabled:false})
   }
 
   render() {
     const screen = ()=> {
       switch(this.state.screen) {
         case 'quizzing':
-          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} />;
+          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} isBtnDisabled={this.state.isBtnDisabled} />;
         case 'options':
           return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} />;
         default:
@@ -1164,9 +1161,6 @@ class App extends Component {
 export default App;
 
 // TODOS
-
-  // 1. Refactor mathFacts state to just be the facts objects (78 objects) DONE
-  // 2. Refactor mathFacts -> selectedFacts so that that it seperates the facts into groups. Ask the question, what is the level of this kind of math. DONE
 
 // in handleClickQuiz: 1. Also setState -> update grouping if needed.
 // Change how the next problem comes. Instead of setTimeout, add next problem button which can only be clicked after an answer has been given.

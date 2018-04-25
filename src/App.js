@@ -910,6 +910,8 @@ class App extends Component {
     this.handleClickOptions = this.handleClickOptions.bind(this);
     this.handleClickQuiz = this.handleClickQuiz.bind(this);
     this.newQuestion = this.newQuestion.bind(this);
+    this.backButton = this.backButton.bind(this);
+    this.homeButton = this.homeButton.bind(this);
   }
 
   handleClickHome(e){
@@ -1138,13 +1140,52 @@ class App extends Component {
     this.setState({quiz:{question, answer}, currentQuestion, isBtnDisabled:false})
   }
 
+  backButton(){
+      this.setState({screen:'options'})
+  }
+
+  homeButton(){
+      this.setState({
+        screen:'home',
+        practice:'',
+        options:["1", "2", '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        quiz:{
+          question:'',
+          correctAnswer:null,
+          userAnswer: '',
+          correct:null
+        },
+        selectedFacts: {
+          mastered:[],
+          level2:[],
+          level1:[]
+        },
+        squares:[
+          {square: 'All', clicked:true},
+          {square:'1', clicked:false},
+          {square:'2', clicked:false},
+          {square:'3', clicked:false},
+          {square:'4', clicked:false},
+          {square:'5', clicked:false},
+          {square:'6', clicked:false},
+          {square:'7', clicked:false},
+          {square:'8', clicked:false},
+          {square:'9', clicked:false},
+          {square:'10', clicked:false},
+          {square:'11', clicked:false},
+          {square:'12', clicked:false},
+          {square:"Enter", clicked:"false"}
+        ]
+      })
+  }
+
   render() {
     const screen = ()=> {
       switch(this.state.screen) {
         case 'quizzing':
-          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} isBtnDisabled={this.state.isBtnDisabled} />;
+          return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} isBtnDisabled={this.state.isBtnDisabled} backButton={this.backButton} homeButton={this.homeButton} />;
         case 'options':
-          return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} />;
+          return <PracticeNums handleClickOptions={this.handleClickOptions} options={this.state.options} squares={this.state.squares} homeButton={this.homeButton} />;
         default:
             return <Home handleClickHome={this.handleClickHome}/>;
       }

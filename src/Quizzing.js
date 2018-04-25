@@ -16,8 +16,8 @@ class Quizzing extends Component {
     return (
       <div className='quizzing'>
         <div className='nav-buttons'>
-          <span className='quizzing-back'>Back</span>
-          <span className='quizzing-home'>Home</span>
+          <span className='quizzing-back' onClick={this.props.backButton}>Back</span>
+          <span className='quizzing-home' onClick={this.props.homeButton}>Home</span>
         </div>
 
         <Question quiz={this.props.quiz} />

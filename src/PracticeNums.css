@@ -1,3 +1,30 @@
+.practice-num-container {
+  display:flex;
+  flex-direction: column;
+  width: 25rem;
+  justify-content: center;
+  border:1px white dotted;
+
+}
+
+.practice-num-home-button {
+  width: 7rem;
+  border: 1px white solid;
+  align-self: end;
+  text-align: center;
+  margin: 1rem 1rem;
+  padding: .2rem 0;
+  font-weight: 600;
+}
+
+.practice-num-home-button:hover {
+  cursor: pointer;
+}
+
+.practice-num-home-button:active, .practice-num-enter:active {
+  background-color: rgba(25, 25, 25, 1);
+}
+
 .practice-nums {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -10,8 +37,7 @@
     ". . . ."
     ". . . ."
     ". . . ."
-    "enter enter enter enter"
-    ;
+    "enter enter enter enter";
 
 }
 
@@ -30,14 +56,15 @@
   grid-area: enter;
 }
 
+
 .practice-num-all, .practice-num-enter {
   display:flex;
   align-items: center;
   justify-content: center;
   border: 1px solid white;
   border-radius: 3px;
-  max-height: 2em;
-  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 1500)));
+  height: 4.5rem;
+  font-size: 4rem;
 
 }
 
@@ -45,14 +72,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style: none;
   margin-left: 0;
-  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 1500)));
-  height: 9vmax;
-  width: 9vmax;
+  font-size: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border:1px solid white;
   justify-self:center;
   align-self:center;
+  border-radius: 3px;
 
 }
 

@@ -15,6 +15,10 @@ class Quizzing extends Component {
   render(){
     return (
       <div className='quizzing'>
+        <div className='nav-buttons'>
+          <span className='quizzing-back'>Back</span>
+          <span className='quizzing-home'>Home</span>
+        </div>
 
         <Question quiz={this.props.quiz} />
         <div className='keypad'>
@@ -29,7 +33,7 @@ class Quizzing extends Component {
           <div className='num' onClick={this.props.handleClickQuiz}>3</div>
           <div className='num' onClick={this.props.handleClickQuiz}>0</div>
 
-          <div className='backspace' onClick={this.props.handleClickQuiz}>Backspace</div>
+          <div className='backspace' onClick={this.props.handleClickQuiz}>Delete</div>
           <QuizEnterBtn isBtnDisabled={this.props.isBtnDisabled} handleClickQuiz={this.props.handleClickQuiz} />
         </div>
       </div>

@@ -1161,19 +1161,18 @@ class App extends Component {
 export default App;
 
 // TODOS
-
-// in handleClickQuiz: 1. Also setState -> update grouping if needed.
-// Change how the next problem comes. Instead of setTimeout, add next problem button which can only be clicked after an answer has been given.
-// sinetgub
-
-// Refactor for redux
-// Add user login and data persistence for userAnswer
-
-// Refactor for react-native
+// Major TODOS
+// 1. Update UI
+      // a. Update the basic UI making it look consistent in general (Done)
+      // b. Add Home and back buttons. (Done)
+        // - Make the buttons work.
+      // b. Make better for smaller screens
+      // b. Add a 'Next Problem' button
+      // c. Add Stats screens
+// 2. Refactor to clean up and organize the code
+// 3. Refactor for redux and mongo
+// 4. Add login, users, etc so there is data persistence.
+// 5. Refactor for react-native.
 
 // Remind myself how to compartmentalize the functions so as to clean up this code.
 // Wait until the font has loaded to display anything so that it stops displaying and then changing once the font is loaded.
-// Overhaul the visual look to be consistant and more polished.
-
-
-//Flow: On 'Enter' on PracticeNums screen -> take options, filter to return only the combos that include the numbers selected, keeping them in their correct groups based on mastery -> setState to add those numbers to possible questions -> pass that to quizzing which runs newQuestion which picks a random fact from the list and displays it.

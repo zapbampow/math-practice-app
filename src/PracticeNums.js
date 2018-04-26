@@ -20,11 +20,14 @@ class PracticeNums extends Component {
 
 
     return (
-      <div className="practice-num-container">
+      <div className="practice-nums-page">
         <div className="practice-num-home-button" onClick={this.props.homeButton}>Home</div>
-        <div className="practice-nums">
-          <div className='practice-num-heading'>What numbers do you want to practice?</div>
-          {squares}
+
+        <div className="practice-num-container">
+          <div className="practice-nums">
+            <div className='practice-num-heading'>What numbers do you want to practice?</div>
+            {squares}
+        </div>
       </div>
     </div>
     )

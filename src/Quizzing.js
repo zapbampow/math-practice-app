@@ -14,14 +14,14 @@ class Quizzing extends Component {
 
   render(){
     return (
-      <div className='quizzing'>
+      <div className="quizzing-main">
         <div className='nav-buttons'>
           <span className='quizzing-back' onClick={this.props.backButton}>Back</span>
           <span className='quizzing-home' onClick={this.props.homeButton}>Home</span>
         </div>
-
-        <Question quiz={this.props.quiz} />
+      <div className='quizzing'>      
         <div className='keypad'>
+          <Question quiz={this.props.quiz} />
           <div className='num' onClick={this.props.handleClickQuiz}>7</div>
           <div className='num' onClick={this.props.handleClickQuiz}>8</div>
           <div className='num' onClick={this.props.handleClickQuiz}>9</div>
@@ -37,6 +37,7 @@ class Quizzing extends Component {
           <QuizEnterBtn isBtnDisabled={this.props.isBtnDisabled} handleClickQuiz={this.props.handleClickQuiz} />
         </div>
       </div>
+    </div>
     )
   }
 }

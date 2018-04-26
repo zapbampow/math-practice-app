@@ -1,16 +1,23 @@
-.quizzing {
+.quizzing-main{
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  height:100vh;
+  }
+
+ .quizzing {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   width:25rem;
-  border:1px white dashed;
+  /* border:1px white dashed; */
+  height:100%;
 }
 
 .nav-buttons{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  align-self: flex-start;
   width:100%;
 }
 
@@ -45,16 +52,6 @@
   text-align:center;
 }
 
-/* .keypad {
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-row:repeat(4, 1fr);
-  grid-gap: .5em;
-  margin: 0 auto;
-  max-width: 64em;
-  padding: 0 1em;
-} */
-
 .keypad {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -63,6 +60,7 @@
   margin: 0 auto;
   padding: .5rem .5em;
   grid-template-areas:
+    "question question question"
     ". . ."
     ". . ."
     ". . . "
@@ -116,4 +114,8 @@
 
 .num:active, .enter:active {
   background-color: rgba(25, 25, 25, 1);
+}
+
+@media (max-width:352px){
+
 }

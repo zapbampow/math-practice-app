@@ -5,3 +5,8 @@
 .wrong-answer {
   color:rgb(195, 0, 0);
 }
+
+.question-container{
+  grid-area: question;
+
+}

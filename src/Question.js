@@ -24,7 +24,7 @@ class Question extends Component {
     };
 
     return (
-      <div>{question()}</div>
+      <div className="question-container">{question()}</div>
     )
   }
 

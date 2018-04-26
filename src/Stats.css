@@ -1,0 +1,28 @@
+/* Stats Category Page */
+.stats-choose-cat-container, .stats-choose-level-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.stats-choose-cat-container>h1, .stats-choose-level-container>h1{
+  text-decoration: underline;
+}
+
+.stats-level, .stats-category {
+  font-size: 1.75rem;
+}
+
+.stats-level:hover, .stats-category:hover {
+  cursor:pointer;
+}
+
+.division:before {
+  content:'\00F7'
+}
+
+.division::after {
+  content:'\00F7'
+}

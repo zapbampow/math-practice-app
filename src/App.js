@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Home';
 import PracticeNums from './PracticeNums';
 import Quizzing from './Quizzing';
+import Stats from './Stats';
 
 class App extends Component {
   constructor(props){
@@ -52,7 +53,7 @@ class App extends Component {
         },
         {
           combo: [1, 3],
-          addLevel: 0,
+          addLevel: 11,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
@@ -904,7 +905,12 @@ class App extends Component {
         level2:[],
         level1:[]
       },
-      isBtnDisabled:false
+      isBtnDisabled:false,
+      stats:{
+        statsScreen:'',
+        category:'',
+        level:''
+      }
     }
     this.handleClickHome = this.handleClickHome.bind(this);
     this.handleClickOptions = this.handleClickOptions.bind(this);
@@ -912,14 +918,26 @@ class App extends Component {
     this.newQuestion = this.newQuestion.bind(this);
     this.backButton = this.backButton.bind(this);
     this.homeButton = this.homeButton.bind(this);
+    this.chooseCategory = this.chooseCategory.bind(this);
+    this.chooseLevel = this.chooseLevel.bind(this);
   }
 
   handleClickHome(e){
-    const newState = {
-      practice:e.target.id,
-      screen:'options'
-    };
-    this.setState(newState);
+    if(e.target.id === 'stats'){
+      this.setState({
+        screen:'stats',
+        stats:{
+          statsScreen:'category',
+        }
+      });
+
+    } else {
+      const newState = {
+        practice:e.target.id,
+        screen:'options'
+      };
+      this.setState(newState);
+    }
   }
 
   handleClickOptions(e) {
@@ -1179,9 +1197,26 @@ class App extends Component {
       })
   }
 
+  chooseCategory(e){
+    const stats = Object.assign(this.state.stats);
+    stats.category = e.target.id;
+    stats.statsScreen = 'level';
+    this.setState({stats});
+  }
+
+  chooseLevel(e){
+    const stats = Object.assign(this.state.stats);
+    stats.level = e.target.id;
+    stats.statsScreen = 'stats';
+    this.setState({stats});
+  }
+
+
   render() {
     const screen = ()=> {
       switch(this.state.screen) {
+        case 'stats':
+          return <Stats stats={this.state.stats} chooseCategory={this.chooseCategory} chooseLevel={this.chooseLevel} mathFacts={this.state.mathFacts} />;
         case 'quizzing':
           return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} isBtnDisabled={this.state.isBtnDisabled} backButton={this.backButton} homeButton={this.homeButton} />;
         case 'options':
@@ -1208,8 +1243,9 @@ export default App;
       // b. Add Home and back buttons. (Done)
         // - Make the buttons work. (done)
       // c. Make better for smaller screens by adding at least one media query to deal with small screens like iPhone SE. (done)
-      // d. Add a 'Next Problem' button 
-      // e. Add Stats screens
+      // d. Add Stats screens (done)
+        // - Output stats based on conditionals for level and category.
+        // - Add back and home buttons to the stats series of screens.
 // 2. Refactor to clean up and organize the code
 // 3. Refactor for redux and mongo
 // 4. Add login, users, etc so there is data persistence.

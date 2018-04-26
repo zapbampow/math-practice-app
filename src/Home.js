@@ -11,6 +11,7 @@ class Home extends Component{
         <div id='subtraction' className='subtraction math-name' onClick={this.props.handleClickHome}>- Subtraction -</div>
         <div id='multiplication' className='multiplication math-name' onClick={this.props.handleClickHome}>x Multiplication x</div>
         <div id='division' className="division math-name" onClick={this.props.handleClickHome}> Division </div>
+        <button id="stats" className="stats-button" onClick={this.props.handleClickHome}>What You've Learned</button>
       </div>
     );
   }

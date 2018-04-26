@@ -123,5 +123,6 @@
 
   .quizzing {
     width: auto;
+    max-width: 292px;
   }
 }

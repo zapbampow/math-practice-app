@@ -1207,8 +1207,8 @@ export default App;
       // a. Update the basic UI making it look consistent in general (Done)
       // b. Add Home and back buttons. (Done)
         // - Make the buttons work. (done)
-      // c. Make better for smaller screens by adding at least one media query to deal with small screens like iPhone SE.
-      // d. Add a 'Next Problem' button
+      // c. Make better for smaller screens by adding at least one media query to deal with small screens like iPhone SE. (done)
+      // d. Add a 'Next Problem' button 
       // e. Add Stats screens
 // 2. Refactor to clean up and organize the code
 // 3. Refactor for redux and mongo

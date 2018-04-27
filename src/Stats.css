@@ -69,3 +69,7 @@
 .stats-main {
   margin: 0 1rem;
 }
+
+.stats-div-symbol::before  {
+  content:' \00F7 '
+}

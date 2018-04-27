@@ -4,7 +4,7 @@ class StatsChosenCatLevel extends Component {
   render(){
     // mastered, practicing, learning, dont-know
     let facts;
-    let statsHeading;
+    let statsHeading
 
     const level = this.props.stats.category === 'addition'
       ? 'addLevel'
@@ -13,6 +13,26 @@ class StatsChosenCatLevel extends Component {
         : this.props.stats.category === 'multiplication'
         ? 'multLevel'
         : 'divLevel';
+
+    const symbol = () => {
+      switch(this.props.stats.category){
+        case 'addition':
+          return " + ";
+          break;
+        case 'subtraction':
+          return " - ";
+          break;
+        case 'multiplication':
+          return " x ";
+          break;
+        case 'division':
+          return ' ' + String.fromCharCode(247) + ' ';
+          break;
+        default:
+          return <span className='stats-div-symbol'></span>;
+          break;
+      }
+    }
 
     if(this.props.stats.level === 'mastered'){
       facts = this.props.mathFacts.slice().filter(obj => obj[level] > 10);
@@ -28,11 +48,10 @@ class StatsChosenCatLevel extends Component {
       statsHeading = "You don't yet know...";
     }
 
-// TODO: add conditional to displayFacts to show a different symbol for facts based on category. 
     const displayFacts = facts.map(mathFact => {
-      const fact = mathFact.combo[0] + " + " + mathFact.combo[1];
+      const fact = mathFact.combo[0] + symbol() + mathFact.combo[1];
+      console.log(symbol);
       const key = mathFact.combo[0].toString() + mathFact.combo[1].toString();
-      console.log(key);
       return <div key={key} className="stat-fact">{fact}</div>
     })
 

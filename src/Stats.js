@@ -10,13 +10,13 @@ class Stats extends Component {
     const statsScreenToShow = () => {
       switch(this.props.stats.statsScreen){
         case 'category':
-          return <StatsChooseCat chooseCategory={this.props.chooseCategory} />;
+          return <StatsChooseCat chooseCategory={this.props.chooseCategory} homeButton={this.props.homeButton} />;
           break;
         case 'level':
-          return <StatsChooseLevel chooseLevel={this.props.chooseLevel} />;
+          return <StatsChooseLevel chooseLevel={this.props.chooseLevel} backButton={this.props.backButton} homeButton={this.props.homeButton} />;
           break;
         case 'stats':
-          return <StatsChosenCatLevel mathFacts={this.props.mathFacts} />;
+          return <StatsChosenCatLevel mathFacts={this.props.mathFacts} stats={this.props.stats} backButton={this.props.backButton} homeButton={this.props.homeButton} />;
             break;
         default: return <div>Returned Null</div>;
       //   : ;

@@ -21,20 +21,11 @@
   width:100%;
 }
 
-.quizzing-back{
+.quizzing-back, .quizzing-home{
   width: 7rem;
   border: 1px white solid;
   text-align: center;
-  margin: 1rem 1rem;
-  padding: .2rem 0;
-  font-weight: 600;
-}
-
-.quizzing-home {
-  width: 7rem;
-  border: 1px white solid;
-  text-align: center;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   padding: .2rem 0;
   font-weight: 600;
 }

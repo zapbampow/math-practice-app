@@ -75,7 +75,7 @@ class App extends Component {
         },
         {
           combo: [1, 5],
-          addLevel: 0,
+          addLevel: 5,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
@@ -86,7 +86,7 @@ class App extends Component {
         },
         {
           combo: [1, 6],
-          addLevel: 0,
+          addLevel: 7,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
@@ -1159,7 +1159,19 @@ class App extends Component {
   }
 
   backButton(){
+    console.log('backbutton clicked')
+    if(this.state.screen === 'quizzing'){
       this.setState({screen:'options'})
+    } else if(this.state.stats.statsScreen === 'level'){
+      const stats = Object.assign(this.state.stats);
+      stats.statsScreen = 'category';
+      this.setState({stats})
+    } else if (this.state.stats.statsScreen === 'stats'){
+      console.log('back clicked on stats screen')
+      const stats = Object.assign(this.state.stats);
+      stats.statsScreen = 'level';
+      this.setState({stats});
+    }
   }
 
   homeButton(){
@@ -1216,7 +1228,7 @@ class App extends Component {
     const screen = ()=> {
       switch(this.state.screen) {
         case 'stats':
-          return <Stats stats={this.state.stats} chooseCategory={this.chooseCategory} chooseLevel={this.chooseLevel} mathFacts={this.state.mathFacts} />;
+          return <Stats stats={this.state.stats} chooseCategory={this.chooseCategory} chooseLevel={this.chooseLevel} mathFacts={this.state.mathFacts} backButton={this.backButton} homeButton={this.homeButton} />;
         case 'quizzing':
           return <Quizzing mathFacts={this.state.mathFacts} newQuestion={this.newQuestion} quiz={this.state.quiz} handleClickQuiz={this.handleClickQuiz} options={this.state.options} isBtnDisabled={this.state.isBtnDisabled} backButton={this.backButton} homeButton={this.homeButton} />;
         case 'options':
@@ -1246,6 +1258,7 @@ export default App;
       // d. Add Stats screens (done)
         // - Output stats based on conditionals for level and category.
         // - Add back and home buttons to the stats series of screens.
+        // - Add additional option to look at a given number and see how well you have mastered each of the combos for that number.
 // 2. Refactor to clean up and organize the code
 // 3. Refactor for redux and mongo
 // 4. Add login, users, etc so there is data persistence.

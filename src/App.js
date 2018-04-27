@@ -35,10 +35,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [1, 2],
@@ -46,10 +42,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [1, 3],
@@ -57,10 +49,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [1, 4],
@@ -68,10 +56,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 5],
@@ -79,10 +64,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 6],
@@ -90,10 +72,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 7],
@@ -101,10 +80,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 8],
@@ -112,10 +88,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 9],
@@ -123,10 +96,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [1, 10],
@@ -134,30 +104,21 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         }, {
           combo: [1, 11],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         }, {
           combo: [1, 12],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
 
         {
@@ -166,10 +127,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [2, 3],
@@ -177,10 +135,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [2, 4],
@@ -188,10 +143,7 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
+
         },
         {
           combo: [2, 5],
@@ -199,43 +151,27 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
-        },
+      },
         {
           combo: [2, 6],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
-        },
+      },
         {
           combo: [2, 7],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
-        },
+      },
         {
           combo: [2, 8],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [2, 9],
@@ -243,10 +179,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [2, 10],
@@ -254,10 +186,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [2, 11],
@@ -265,10 +193,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [2, 12],
@@ -276,10 +200,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -288,10 +208,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 4],
@@ -299,10 +215,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 5],
@@ -310,10 +222,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 6],
@@ -321,10 +229,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 7],
@@ -332,10 +236,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 8],
@@ -343,10 +243,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 9],
@@ -354,10 +250,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 10],
@@ -365,21 +257,13 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
-        },
+      },
         {
           combo: [3, 11],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [3, 12],
@@ -387,10 +271,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -399,10 +279,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 5],
@@ -410,21 +286,13 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
-        },
+      },
         {
           combo: [4, 6],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 7],
@@ -432,10 +300,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 8],
@@ -443,10 +307,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 9],
@@ -454,10 +314,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 10],
@@ -465,10 +321,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 11],
@@ -476,10 +328,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [4, 12],
@@ -487,10 +335,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -499,10 +343,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 6],
@@ -510,10 +350,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 7],
@@ -521,10 +357,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 8],
@@ -532,10 +364,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 9],
@@ -543,10 +371,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 10],
@@ -554,10 +378,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 11],
@@ -565,10 +385,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [5, 12],
@@ -576,10 +392,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -588,10 +400,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 7],
@@ -599,10 +407,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 8],
@@ -610,10 +414,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 9],
@@ -621,10 +421,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 10],
@@ -632,10 +428,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 11],
@@ -643,10 +435,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [6, 12],
@@ -654,10 +442,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -666,10 +450,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [7, 8],
@@ -677,10 +457,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [7, 9],
@@ -688,10 +464,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [7, 10],
@@ -699,10 +471,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [7, 11],
@@ -710,10 +478,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [7, 12],
@@ -721,10 +485,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -733,10 +493,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [8, 9],
@@ -744,10 +500,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [8, 10],
@@ -755,10 +507,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [8, 11],
@@ -766,10 +514,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [8, 12],
@@ -777,10 +521,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
 
         {
@@ -789,10 +529,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [9, 10],
@@ -800,10 +536,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [9, 11],
@@ -811,10 +543,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [9, 12],
@@ -822,10 +550,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [10, 10],
@@ -833,10 +557,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [10, 11],
@@ -844,10 +564,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [10, 12],
@@ -855,10 +571,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [11, 11],
@@ -866,10 +578,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [11, 12],
@@ -877,10 +585,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         },
         {
           combo: [12, 12],
@@ -888,10 +592,6 @@ class App extends Component {
           subLevel: 0,
           multLevel: 0,
           divLevel: 0,
-          addMastered: false,
-          subMastered: false,
-          multMastered: false,
-          divMastered: false
         }
       ],
       quiz:{

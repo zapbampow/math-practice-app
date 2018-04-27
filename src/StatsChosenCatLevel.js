@@ -26,6 +26,7 @@ class StatsChosenCatLevel extends Component {
           return " x ";
           break;
         case 'division':
+          // Returns an obelus symbol
           return ' ' + String.fromCharCode(247) + ' ';
           break;
         default:
@@ -49,8 +50,14 @@ class StatsChosenCatLevel extends Component {
     }
 
     const displayFacts = facts.map(mathFact => {
-      const fact = mathFact.combo[0] + symbol() + mathFact.combo[1];
-      console.log(symbol);
+      let fact;
+      if(this.props.stats.category === 'addition' || this.props.stats.category === 'multiplication'){
+        fact = mathFact.combo[0] + symbol() + mathFact.combo[1];
+      } else if (this.props.stats.category === 'subtraction'){
+        fact = mathFact.combo[0] + mathFact.combo[1] + symbol() + mathFact.combo[0];
+      } else {
+        fact = mathFact.combo[0] * mathFact.combo[1] + symbol() + mathFact.combo[0]
+      }
       const key = mathFact.combo[0].toString() + mathFact.combo[1].toString();
       return <div key={key} className="stat-fact">{fact}</div>
     })

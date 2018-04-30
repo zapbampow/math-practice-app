@@ -1,12 +1,6 @@
 import React, {Component} from 'react'
 
 class QuizEnterBtn extends Component {
-
-  componentWillReceiveProps(nextProps){
-    console.log('nextProps =')
-    console.log(nextProps);
-  }
-
   render(){
     const props = this.props;
     const enter = (props.isBtnDisabled)

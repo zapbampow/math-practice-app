@@ -169,6 +169,14 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            2, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
             2, 2
           ],
           addLevel: 0,
@@ -257,6 +265,22 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            3, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            3, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
             3, 3
           ],
           addLevel: 0,
@@ -337,6 +361,30 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            4, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            4, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            4, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
             4, 4
           ],
           addLevel: 0,
@@ -409,6 +457,38 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            5, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            5, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            5, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
+            5, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        },{
+          combo: [
             5, 5
           ],
           addLevel: 0,
@@ -473,7 +553,39 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
-            6, 6
+            6, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            6, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            6, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            6, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            6, 5
           ],
           addLevel: 0,
           subLevel: 0,
@@ -529,6 +641,54 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            7, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            7, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            7, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            7, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            7, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            7, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             7, 7
           ],
           addLevel: 0,
@@ -577,6 +737,62 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            8, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            8, 7
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             8, 8
           ],
           addLevel: 0,
@@ -617,6 +833,70 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            9, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 7
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            9, 8
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             9, 9
           ],
           addLevel: 0,
@@ -649,6 +929,78 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            10, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 7
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 8
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            10, 9
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             10, 10
           ],
           addLevel: 0,
@@ -673,6 +1025,86 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            11, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 7
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 8
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 9
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            11, 10
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             11, 11
           ],
           addLevel: 0,
@@ -689,13 +1121,101 @@ class App extends Component {
           divLevel: 0
         }, {
           combo: [
+            12, 1
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 2
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 3
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 4
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 5
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 6
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 7
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 8
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 9
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 10
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
+            12, 11
+          ],
+          addLevel: 0,
+          subLevel: 0,
+          multLevel: 0,
+          divLevel: 0
+        }, {
+          combo: [
             12, 12
           ],
           addLevel: 0,
           subLevel: 0,
           multLevel: 0,
           divLevel: 0
-        }
+        },
       ],
       quiz: {
         question: '',
@@ -821,7 +1341,8 @@ class App extends Component {
 
       // Fill selectedFacts
       mathFacts.forEach(obj => {
-        if (match(options, obj.combo[0]) || match(options, obj.combo[1])) {
+        // if (match(options, obj.combo[0]) || match(options, obj.combo[1])) {
+        if (match(options, obj.combo[0])) {
           let levelType;
           switch (this.state.practice) {
             case 'addition':
@@ -856,7 +1377,6 @@ class App extends Component {
       this.setState({screen: 'quizzing', selectedFacts})
     } else {
       let options = this.state.options.slice();
-      console.log(options);
       if (!options.includes(e.target.innerHTML)) {
         options.push(e.target.innerHTML);
       } else if (this.state.squares[0].clicked === true) {
@@ -888,9 +1408,7 @@ class App extends Component {
     // What to to when clicking 'Enter'
     if (e.target.innerHTML === 'Enter') {
       this.setState({isBtnDisabled: true});
-      console.log('btn disabled')
       if (quiz.userAnswer == quiz.answer) {
-        console.log("Correct!")
         const quiz = Object.assign(this.state.quiz);
         quiz.correct = true;
         const currentQuestion = Object.assign(this.state.currentQuestion);
@@ -936,7 +1454,7 @@ class App extends Component {
         this.setState({quiz, currentQuestion});
         setTimeout(this.newQuestion, 3000)// Click Backspace;
       }
-    } else if (e.target.innerHTML === "Backspace") {
+    } else if (e.target.innerHTML === "Delete") {
       quiz.userAnswer = quiz.userAnswer.slice(0, quiz.userAnswer.length - 1);
       this.setState({quiz});
     } else if (quiz.userAnswer) {
@@ -1016,7 +1534,6 @@ class App extends Component {
   }
 
   backButton() {
-    console.log('backbutton clicked')
     if (this.state.screen === 'quizzing') {
       this.setState({screen: 'options'})
     } else if (this.state.stats.statsScreen === 'level') {
@@ -1024,7 +1541,6 @@ class App extends Component {
       stats.statsScreen = 'category';
       this.setState({stats})
     } else if (this.state.stats.statsScreen === 'stats') {
-      console.log('back clicked on stats screen')
       const stats = Object.assign(this.state.stats);
       stats.statsScreen = 'level';
       this.setState({stats});

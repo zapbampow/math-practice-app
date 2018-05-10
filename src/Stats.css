@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:1px white dashed;
 }
 
 .stats-choose-cat-container>h1, .stats-choose-level-container>h1{

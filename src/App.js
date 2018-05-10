@@ -1501,10 +1501,6 @@ class App extends Component {
         answer = currentQuestion.combo[0] + currentQuestion.combo[1];
         break;
       case 'subtraction':
-        {/*
-        TODO: Do the same thing you are doing to do with the division with randomizing.
-      */
-        }
         question = (currentQuestion.combo[1] + currentQuestion.combo[0]) + ' - ' + currentQuestion.combo[0] + ' = ';
         answer = (currentQuestion.combo[1] + currentQuestion.combo[0]) - currentQuestion.combo[0];
         break;
@@ -1513,11 +1509,6 @@ class App extends Component {
         answer = currentQuestion.combo[0] * currentQuestion.combo[1];
         break;
       case 'division':
-        {/*
-          TODO: Figure out which number to use as the divisor, then place it as the divisor.
-          Possible solution: Set array with 2 options. Set randomNum. If randomNum <= 0.5, check if first num in array is in options. If yes, use it. If not use, other number. If randomNum > 0.5, check if second num in array is in options. If yes, use it, if not, use other number.
-        */
-        }
         question = (currentQuestion.combo[0] * currentQuestion.combo[1]) + ' \xF7 ' + currentQuestion.combo[0] + ' = ';
         answer = (currentQuestion.combo[0] * currentQuestion.combo[1]) / currentQuestion.combo[0];
         break;
@@ -1663,16 +1654,12 @@ export default App;
 // TODOS
 // Major TODOS
 // 1. Update UI
-// a. Update the basic UI making it look consistent in general (Done)
-// b. Add Home and back buttons. (Done)
-// - Make the buttons work. (done)
-// c. Make better for smaller screens by adding at least one media query to deal with small screens like iPhone SE. (done)
-// d. Add Stats screens (done)
-// - Output stats based on conditionals for level and category.
-// - Add back and home buttons to the stats series of screens.
-// - Add additional option to look at a given number and see how well you have mastered each of the combos for that number.
-// 2. Refactor to include 12 options for each number. It's a hassle to have to do this, but it is the easiest way to get the correct stats and to keep track of every possibility in terms of combinations. As is 2+8 is the same as 8+2 from the stats perspective. But having kids, you know it has the same answer, but knowing one doesn't mean mastery of the other.
+
+// 2. Add additional option to look at a given number and see how well you have mastered each of the combos for that number.
+
 // 3. Refactor to clean up and organize the code
+// 4. Optional refactor: save state to localStorage. On initial render, get state from localStoraged
+// 5. Add backend. Use express and mongo to save to backend.
 // 4. Refactor for redux and mongo
 // 5. Add login, users, etc so there is data persistence.
 // 6. Refactor for react-native.
